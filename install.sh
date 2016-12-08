@@ -8,12 +8,19 @@ fi
 bin="$(realpath $1)"
 here="$(dirname $(realpath $0))"
 
-if [[ ! -d "$bin" ]]; then
+if [[ ! -e "$bin" ]]; then
     echo "Error: ${bin} does not exist."
+    exit 1
+fi
+
+if [[ ! -d "$bin" ]]; then
+    echo "Error: ${bin} is no directory."
+    exit 1
 fi
 
 if [[ ! -w "$bin" ]]; then
     echo "Error: ${bin} is not writable."
+    exit 1
 fi
 
 script_list=(
