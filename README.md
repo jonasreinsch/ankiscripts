@@ -11,3 +11,7 @@ you could write that instead as Lingua˸˸EN˸˸Inflexion, i.e. by
 using the similar looking Unicode character '˸'.
 
 Inspired by this [reddit thread](https://www.reddit.com/r/Anki/comments/3wpecv/how_to_type_escape_in_anki/).
+
+# ankicount
+
+This script counts and prints the number of cards in your Anki deck.
